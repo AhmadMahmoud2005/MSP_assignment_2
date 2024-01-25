@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    background-image: url("./assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+/* start navegation style */
+nav {
+    /* position: fixed; */
+    width: 100%;
+    padding: 30px;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 15px;
+}
+
+nav :where(img, p) {
+    float: left;
+}
+
+nav ul{
+    float: right;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+/* end navegation style */
+
+/* start first section style */
+section {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+section :where(p, h1, button) {
+    padding: 10px;
+}
+
+section p {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+section h1 {
+    margin: auto;
+    font-size: 6rem;
+}
+
+section button {
+    background-color:#01A3F1;
+    border-radius: 20px;
+    color: white;
+    border-style: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+/* end first section style */
+
+/* start contact */
+.contact {
+    background: #181621;
+    color: white;
+    overflow: hidden;
+    padding: 30px 20px;
+}
+
+.contact .container {
+    float: left;
+    margin-inline: 25px;
+    width: calc(100%/4 - 5*10px);
+    height: 200px;
+    text-align: center;
+}
+
+.contact .container i {
+    font-size: 2rem;
+    color: #01A3F1;
+}
+
+.contact .container h3 {
+    margin: 10px 0;
+}
+
+.contact .container p {
+    font-size: 14px;
+    color: #999;
+}
+/* end contact */
+
+/* start about us */
+.about {
+    background-color:#201D2E;
+    color: white;
+    padding: 30px 10px;
+    overflow: hidden;
+}
+
+.about h1 {
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about section {
+    margin: 10px 0;
+}
+
+.about section button {
+    margin: auto;
+    border-radius: 3px;
+    padding: 15px;
+    color: #999;
+    background-color: transparent;
+    border-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 0.7rem;
+    text-transform: none;
+    color: #999;
+}
+
+.about section button:first-of-type {
+    background-color: #01A3F1;
+    color: white;
+}
+
+.about .card {
+    float: left;
+    width: calc(100%/3 - 2*50px);
+    margin-inline: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.about .card p {
+    width: 60%;
+    padding: 10px 0;
+    margin: auto;
+    text-align: left;
+}
+
+.about .card :where(i, h3) {
+    display: inline;
+}
+
+.about .card i {
+    color: #01A3F1;
+    font-size: 2rem;
+}
+/*end about us */
+
+.faq {
+    background-color:#181621;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.faq p {
+    color: #999;
+    font-size: .7rem;
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+}
